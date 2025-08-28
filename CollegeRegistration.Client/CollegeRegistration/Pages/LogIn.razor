@@ -1,0 +1,40 @@
+﻿@page "/login"
+
+@inject NavigationManager Navigation
+
+
+<PageTitle>CampusConnect</PageTitle>
+
+  <div class="container">
+    <div class="form-box">
+      <h1 id="title">Log In</h1>
+      <form>
+        <div class="input-group">
+          <div class="input-field" id="nameField">
+            <input type="text" placeholder="Full Name" required>
+          </div>
+          <div class="input-field">
+            <input type="email" placeholder="Email" required>
+          </div>
+          <div class="input-field">
+            <input type="password" placeholder="Password" required>
+          </div>
+        </div>
+        <p>Forgot password? <a href="#">Click Here</a></p>
+        <div class="btn-field">
+          <button type="button" id="signupBtn" @onclick="NavigateToAdmission">Sign Up</button>
+          <button type="button" id="loginBtn" class="disable">Log In</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  @code{
+
+    private void NavigateToAdmission(){
+
+      // Navigate to College Admission Form 
+      Navigation.NavigateTo("/admission");
+    }
+
+  }

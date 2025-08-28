@@ -1,0 +1,111 @@
+@page "/admission"
+@using System.ComponentModel.DataAnnotations
+
+<link href="css/CollegeAdmissionForm.css" rel="stylesheet" />
+<div class="form-container">
+    <h3>College Admission Form</h3>
+
+    <EditForm Model="@student" OnValidSubmit="HandleSubmit">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+
+        <div class="form-row">
+            <div class="form-col">
+                <label>First Name</label>
+                <InputText @bind-Value="student.FirstName" class="form-control" />
+            </div>
+            <div class="form-col">
+                <label>Last Name</label>
+                <InputText @bind-Value="student.LastName" class="form-control" />
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-col">
+                <label>Gender</label>
+                <InputSelect @bind-Value="student.Gender" class="form-control">
+                    <option value="">Select</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </InputSelect>
+            </div>
+            <div class="form-col">
+                <label>Date of Birth</label>
+                <InputDate @bind-Value="student.DateOfBirth" class="form-control" />
+            </div>
+        </div>
+
+        <!-- Other single-column fields remain the same -->
+        <div class="form-group">
+            <label>Email</label>
+            <InputText @bind-Value="student.Email" type="email" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label>Phone Number</label>
+            <InputText @bind-Value="student.PhoneNumber" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label>Course Applying For</label>
+            <InputText @bind-Value="student.Course" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label>Address</label>
+            <InputTextArea @bind-Value="student.Address" class="form-control" rows="3" />
+        </div>
+
+        <div class="form-row">
+            <div class="form-col">
+                <label>High School GPA</label>
+                <InputNumber @bind-Value="student.GPA" class="form-control" step="0.01" />
+            </div>
+            <div class="form-col">
+                <label>Extracurricular Activities</label>
+                <InputTextArea @bind-Value="student.Extracurriculars" class="form-control" rows="2" />
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary mt-3">Submit Application</button>
+    </EditForm>
+
+
+
+
+    @if (successMessage != null)
+    {
+        <div class="alert alert-success mt-2">@successMessage</div>
+    }
+
+    @code {
+        private Student student = new Student();
+        private string? successMessage;
+
+        private void HandleSubmit()
+        {
+            // For now, just show a success message. Later you can save to DB.
+            successMessage = $"Application submitted successfully for {student.FullName}!";
+            student = new Student(); // Reset form
+        }
+
+public class Student
+{
+    [Required] public string FirstName { get; set; } = string.Empty;
+    [Required] public string LastName { get; set; } = string.Empty;
+    [Required, EmailAddress] public string Email { get; set; } = string.Empty;
+    [Required] public DateTime DateOfBirth { get; set; } = DateTime.Today;
+    [Required] public string Gender { get; set; } = string.Empty;
+    [Required, Phone] public string PhoneNumber { get; set; } = string.Empty;
+    [Required] public string Course { get; set; } = string.Empty;
+    [Required] public string Address { get; set; } = string.Empty;
+    [Range(0, 4.0)] public double GPA { get; set; }
+    public string Extracurriculars { get; set; } = string.Empty;
+
+    // Optional computed property
+    public string FullName => $"{FirstName} {LastName}";
+}
+    }
+
+</div>

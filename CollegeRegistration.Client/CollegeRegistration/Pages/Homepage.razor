@@ -1,0 +1,51 @@
+@page "/"
+<link href="css/Homepage.css" rel="stylesheet" />
+
+@inject NavigationManager Navigation
+
+<div class="homepage">
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Welcome to CampusConnect</h1>
+            <p>Your gateway to easy college registration and student management.</p>
+            <button @onclick="@(() => Navigation.NavigateTo("/admission"))">Apply Now</button>
+        </div>
+        <div class="hero-image">
+            <img src="images/campus1.png" alt="Campus" />
+        </div>
+    </section>
+
+    <!-- Features Section -->
+<section class="features">
+    <h2>Our Services</h2>
+    <div class="feature-cards">
+        <div class="card card-registration">
+            <div class="card-content">
+                <h3>Easy Registration</h3>
+                <p>Apply for courses online with a few clicks.</p>
+            </div>
+        </div>
+        <div class="card card-student">
+            <div class="card-content">
+                <h3>Student Management</h3>
+                <p>Track student progress, grades, and records easily.</p>
+            </div>
+        </div>
+        <div class="card card-courses">
+            <div class="card-content">
+                <h3>Course Catalog</h3>
+                <p>Browse programs, courses, and schedules.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: registrar@campusconnect.edu | Phone: (123) 456-7890</p>
+        <p>Address: 123 College Ave, Education City</p>
+    </section>
+</div>
