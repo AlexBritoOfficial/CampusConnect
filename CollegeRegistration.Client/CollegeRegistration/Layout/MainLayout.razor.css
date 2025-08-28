@@ -1,0 +1,60 @@
+/* Reset basic layout */
+.page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Main content area below navbar */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #2e86de, #48dbfb);
+}
+
+/* Top navbar placeholder (if you want additional styling) */
+.top-row {
+    background-color: #2e86de;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Top navbar links */
+.top-row ::deep a, .top-row ::deep .btn-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+.top-row ::deep a:hover, .top-row ::deep .btn-link:hover {
+    color: #ffd700;
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+    .top-row {
+        justify-content: center;
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px;
+    }
+
+    .top-row ::deep a, .top-row ::deep .btn-link {
+        margin: 5px;
+    }
+}

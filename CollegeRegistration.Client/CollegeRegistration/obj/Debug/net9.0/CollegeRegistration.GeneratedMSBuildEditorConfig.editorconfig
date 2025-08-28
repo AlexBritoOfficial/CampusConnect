@@ -1,0 +1,53 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net9.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = CollegeRegistration
+build_property.RootNamespace = CollegeRegistration
+build_property.ProjectDir = /Users/alexbrito/Documents/Development/CollegeRegistrationSolution/CollegeRegistration.Client/CollegeRegistration/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = false
+build_property.RazorLangVersion = 9.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/alexbrito/Documents/Development/CollegeRegistrationSolution/CollegeRegistration.Client/CollegeRegistration
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 9.0
+build_property.EnableCodeStyleSeverity = 
+
+[/Users/alexbrito/Documents/Development/CollegeRegistrationSolution/CollegeRegistration.Client/CollegeRegistration/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/alexbrito/Documents/Development/CollegeRegistrationSolution/CollegeRegistration.Client/CollegeRegistration/Pages/CollegeAdmissionForm.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ29sbGVnZUFkbWlzc2lvbkZvcm0ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/alexbrito/Documents/Development/CollegeRegistrationSolution/CollegeRegistration.Client/CollegeRegistration/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/alexbrito/Documents/Development/CollegeRegistrationSolution/CollegeRegistration.Client/CollegeRegistration/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0L01haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-ue18i6o87d
+
+[/Users/alexbrito/Documents/Development/CollegeRegistrationSolution/CollegeRegistration.Client/CollegeRegistration/Pages/Homepage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSG9tZXBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-0gd4hujka1
+
+[/Users/alexbrito/Documents/Development/CollegeRegistrationSolution/CollegeRegistration.Client/CollegeRegistration/Pages/LogIn.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTG9nSW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-frm7mlliu6
+
+[/Users/alexbrito/Documents/Development/CollegeRegistrationSolution/CollegeRegistration.Client/CollegeRegistration/Shared/TopNavBar.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL1RvcE5hdkJhci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-06egdalhwf

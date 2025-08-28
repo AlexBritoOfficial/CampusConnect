@@ -1,0 +1,110 @@
+*[b-frm7mlliu6] {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body[b-frm7mlliu6] { 
+  min-height: 100vh;
+  background: linear-gradient(135deg, #2e86de, #48dbfb);
+}
+
+/* Center inside container */
+.container[b-frm7mlliu6] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  padding: 20px; /* extra padding for very small screens */
+}
+
+.form-box[b-frm7mlliu6] {
+  width: 100%;
+  max-width: 700px;         /* slightly smaller than 900 for better form feel */
+  padding: 50px 40px;       /* more spacious padding */
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.form-box:hover[b-frm7mlliu6] {
+  transform: translateY(-3px);
+}
+
+.form-box h1[b-frm7mlliu6] {
+  font-size: 32px;
+  margin-bottom: 25px;
+  color: #2e86de;
+}
+
+/* Input grouping */
+.input-group[b-frm7mlliu6] {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;   /* more spacing between input fields */
+}
+
+.input-field input[b-frm7mlliu6] {
+  display: block;
+  width: 100%;
+  padding: 16px 20px;     /* bigger padding = wider feel */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.input-field input:focus[b-frm7mlliu6] {
+  border-color: #2e86de;
+  box-shadow: 0 0 8px rgba(46,134,222,0.3);
+}
+
+p[b-frm7mlliu6] {
+  font-size: 14px;
+  margin: 12px 0;
+  color: #666;
+}
+
+p a[b-frm7mlliu6] {
+  color: #2e86de;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.btn-field[b-frm7mlliu6] {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.btn-field button[b-frm7mlliu6] {
+  flex: 1;
+  padding: 14px;
+  border: none;
+  margin: 0 6px;
+  border-radius: 10px;
+  background: #2e86de;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-field button.disable[b-frm7mlliu6] {
+  background: #ddd;
+  color: #555;
+  cursor: not-allowed;
+}
+
+.btn-field button:hover:not(.disable)[b-frm7mlliu6] {
+  background: #1b4f72;
+  transform: translateY(-2px);
+}
